@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int T; // Number of test cases
+    cin >> T;
+
+    // Loop through each test case
+    for (int i = 0; i < T; i++) {
+        int B1, B2, B3;
+        cin >> B1 >> B2 >> B3; // Input three space-separated integers
+
+        // Check the condition and print the appropriate result
+        if ((B1 == 1 && B2 == 0 && B3 == 0) || 
+            (B1 == 0 && B2 == 0 && B3 == 0) ||
+            (B1 == 0 && B2 == 1 && B3 == 0) || 
+            (B1 == 0 && B2 == 0 && B3 == 1)) {
+            cout << "Water filling time" << endl;
+        } else {
+            cout << "Not now" << endl;
+        }
+    }
+
+    return 0;
+}
