@@ -1,0 +1,17 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int t;
+    cin >> t;  
+    while (t--) {
+        int n, k, m;
+        cin >> n >> k >> m;  
+        
+        int capacity = k * m;
+        int number_of_bags = (n + capacity - 1) / capacity;
+
+        cout << number_of_bags << endl; 
+    }
+    return 0;
+}
