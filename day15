@@ -1,0 +1,23 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>> t;
+	
+	while(t--){
+	    int n, a, b;
+	    cin >> n >> a >> b;
+	    
+	    int totalrounds = 0;
+        while (n > 1) {
+            n /= 2;
+            totalrounds++;
+        }
+	    int totaltime = totalrounds * a + (totalrounds - 1) * b;
+	    
+	    cout << totaltime << endl;
+	}
+	return 0;
+}
