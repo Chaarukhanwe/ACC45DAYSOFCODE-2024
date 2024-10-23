@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int t;
+    cin >> t; 
+
+    while (t--) {
+        int X, Y;
+        cin >> X >> Y;
+        
+        int min_wins = X - Y;
+
+        if (min_wins < 0) {
+            min_wins = 0;
+        }
+
+        cout << min_wins << endl;
+    }
+
+    return 0;
+}
