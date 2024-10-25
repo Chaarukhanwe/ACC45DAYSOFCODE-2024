@@ -1,0 +1,28 @@
+def count_contest_problems(test_cases):
+    results = []
+    for _ in range(test_cases):
+       
+        N = int(input().strip())
+        
+        contest_codes = input().strip().split()
+        
+        
+        start38_count = 0
+        ltime108_count = 0
+        
+        
+        for code in contest_codes:
+            if code == "START38":
+                start38_count += 1
+            elif code == "LTIME108":
+                ltime108_count
+        results.append((start38_count, ltime108_count))
+    
+   
+    for result in results:
+        print(result[0], result[1])
+
+
+if __name__ == "__main__":
+    T = int(input().strip())  # Number of test cases
+    count_contest_problems(T)
