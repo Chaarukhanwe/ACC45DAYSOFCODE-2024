@@ -1,0 +1,11 @@
+def count_tuesdays(n):
+  tuesday1 = 1
+
+  upcoming_tuesdays = (n-1)//7
+
+  total_tuesdays= tuesday1 + upcoming_tuesdays
+
+  return total_tuesdays
+
+n = int(input("enter no. of days till halloween: "))
+print("total tuesdays : ", count_tuesdays(n))
