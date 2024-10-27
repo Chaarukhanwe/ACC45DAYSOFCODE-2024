@@ -1,0 +1,16 @@
+def max_tastiness(a,b,c,d):
+    tcase1 = a + c
+    tcase2 = b + c
+    tcase3 = a + d
+    tcase4 = b + d
+
+    max_taste = max(tcase1 , tcase2, tcase3, tcase4) 
+
+    return max_taste
+
+a = int(input("enter tastiness of ingredient A: "))
+b = int(input("enter tastiness of ingredient B: "))
+c = int(input("enter tastiness of ingredient C: "))
+d = int(input("enter tastiness of ingredient D: "))
+
+print("maximum taistiness of dish: ", max_tastiness(a,b,c,d))
