@@ -1,0 +1,15 @@
+def count_wolverine_mutations( n, k, characteristics ):
+    count = 0
+    for characteristics in characteristics:
+      if ( characteristics + k ) % 7 == 0:
+        count += 1
+
+    return count
+
+n = 5
+k = 3
+characteristics = [ 10 , 14 , 18 , 4 , 7]  #initial values
+
+mutations_count = count_wolverine_mutations( n, k, characteristics )
+
+print(" no. of minions having wolverine like mutations: ", mutations_count)
