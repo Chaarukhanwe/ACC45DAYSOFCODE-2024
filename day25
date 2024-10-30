@@ -1,0 +1,12 @@
+def distance( A, B, K):
+    total_distance = abs(B - A)
+
+    total_units = (total_distance/K)
+
+    return total_units
+
+A = int(input("enter coordinate A: "))
+B = int(input("enter coordinate B: "))
+K = int(input("enter K: "))
+
+print("minimum number of steps required by chef: ", distance(A,B,K))
