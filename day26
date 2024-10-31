@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int T;
+    cin >> T;
+    while (T--) {
+        int P, Q;
+        cin >> P >> Q;
+        
+        int totalPoints = P + Q; // Total points played
+        int serveGroup = totalPoints / 2; // Each group has 2 serves
+        int player = serveGroup % 2; // Determine player based on group
+
+        // If player is 0, it's Alice's turn; if 1, it's Bob's turn
+        if (player == 0) {
+            cout << "Alice" << endl;
+        } else {
+            cout << "Bob" << endl;
+        }
+    }
+    return 0;
+}
