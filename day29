@@ -1,0 +1,32 @@
+def find_winner(rounds):
+    cumulative_score_player1 = 0
+    cumulative_score_player2 = 0
+    max_lead = 0
+    winner = None
+
+    for score1, score2 in rounds:
+        cumulative_score_player1 += score1
+        cumulative_score_player2 += score2
+        
+        if cumulative_score_player1 > cumulative_score_player2:
+            current_lead = cumulative_score_player1 - cumulative_score_player2
+            current_leader = 1  # Player 1 is leading
+        else:
+            current_lead = cumulative_score_player2 - cumulative_score_player1
+            current_leader = 2  # Player 2 is leading
+        
+        if current_lead > max_lead:
+            max_lead = current_lead
+            winner = current_leader
+
+    return winner, max_lead
+rounds = [
+    (140, 82),
+    (89, 134),
+    (90, 110),
+    (112, 106),
+    (88, 90)
+]
+
+winner, winning_lead = find_winner(rounds)
+print(f"Winner: Player {winner}, Winning Lead: {winning_lead}")
