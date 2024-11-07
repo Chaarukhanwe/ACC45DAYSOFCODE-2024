@@ -1,0 +1,9 @@
+T = int(input())
+
+for _ in range(T):
+    N = int(input())
+    weeks = N // 7
+    tuesdays = weeks
+    if N % 7 >= 2:
+        tuesdays += 1
+    print(tuesdays)
