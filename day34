@@ -1,0 +1,14 @@
+T = int(input())
+
+for _ in range(T):
+    N = int(input())
+    A = list(map(int, input().split()))
+    
+    sum_A = sum(A)
+    
+    if sum_A == 0:
+        print(0)
+    elif sum_A % 2 != 0:
+        print(-1)
+    else:
+        print(abs(sum_A) // 2)
